@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>Heritage Supplies</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Heritage Supplies</h1>
+
+        <div id="app">
+            <select v-model="selected" v-on:change="show_bldg">
+                <option disabled value="">Please select one</option>
+                <option v-for="bldg in bldgs">{{bldg.number}}</option>
+            </select>
+            <div v-show="disp_bldg">
+                <h2>Building {{selected}}</h2>
+                <ul>
+                    <li v-for="bldg in bldgs" v-if="bldg.number === selected">
+                        Lights
+                        <button v-on:click="subtract_light()">-</button>
+                        {{bldg.lights}}
+                        <button v-on:click="add_light">+</button>
+                    </li>
+                    <li v-for="bldg in bldgs" v-if="bldg.number === selected">
+                        Cartridges
+                        <button v-on:click="subtract_cartridge">-</button>
+                        {{bldg.cartridges}}
+                        <button v-on:click="add_cartridge">+</button>
+                    </li>
+                    <li v-for="bldg in bldgs" v-if="bldg.number === selected">
+                        Ballasts
+                        <button v-on:click="subtract_ballast">-</button>
+                        {{bldg.ballasts}}
+                        <button v-on:click="add_ballast">+</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/script.js"></script>
+
+    <!--Footer-->
+    <footer>
+        <p>Allen Black | <a href="https://github.com/allenmb/hrcloset">Project Repo</a></p>
+    </footer>
+</body>
+
+</html>
