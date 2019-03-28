@@ -40,6 +40,7 @@ let app = new Vue({
             this.buildings = response.data;
         },
         async decrement(building_number, item_name) {
+            console.log("I'm trying!")
             try {
                 let building = null;
                 for (let i = 0; i < this.buildings.length; i++) {

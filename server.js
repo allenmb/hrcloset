@@ -73,6 +73,7 @@ app.put('/api/bldgs/remove/:id', async (req, res) => {
             building.items.splice(delind, 1);
         }
         building.save();
+        res.send(building);
     } catch (error) {
         console.log(error);
     }
@@ -90,6 +91,7 @@ app.put('/api/bldgs/:id', async (req, res) => {
             stocked_number: req.body.stocked_number,
         });
         building.save();
+        res.send(building);
     } catch (error) {
         console.log(error);
     }
@@ -110,6 +112,7 @@ app.put('/api/item/:id', async (req, res) => {
             };
         };
         building.save();
+        res.send(building);// add a 200 response to all successful requests
     } catch (error) {
         console.log(error);
         res.sendStatus(500);
