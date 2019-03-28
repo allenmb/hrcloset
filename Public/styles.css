@@ -16,6 +16,10 @@ body {
 button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
+    margin: 0.2em;
+}
+
+.plusminus {
     margin: 1em;
 }
 
@@ -40,4 +44,17 @@ li {
 select {
     height: 3em;
     width: 200px;
+}
+
+input {
+    margin: 0.2em;
+}
+
+/* Form */
+input,
+textarea,
+select,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 }

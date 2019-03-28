@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Heritage Halls Supplies</title>
+</head>
+
+<body>
+    <div id="admin" class="content">
+        <h1>Heritage Halls Supplies Admin Page</h1>
+        <h2>Items that are stocked</h2>
+        <div class="input">
+            <input v-model="item_bldg" placeholder="Building">
+            <br>
+            <input v-model="name" placeholder="Item"><br>
+            <input v-model="current_number" placeholder="# in Closet"><br>
+            <input v-model="stocked_number" placeholder="# for Full Stock"><br>
+            <button v-on:click="addItem(item_bldg)">Add Item to List</button><br>
+            <button v-on:click="removeItem(item_bldg)">Remove Item from List</button><br>
+        </div>
+
+        <h2>Add/Delete a Building</h2>
+
+        <input v-model="bldg_num" placeholder="Building"><br>
+        <button v-on:click="addBldg">Add Building</button><br>
+        <button v-on:click="removeBldg(bldg_num)">Remove Building</button><br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/admin.js"></script>
+    <footer>
+
+        <p><a href="/index.html">Home</a> | Allen Black | <a href="https://github.com/allenmb/hrcloset">Project Repo</a></p>
+    </footer>
+</body>
+
+</html>

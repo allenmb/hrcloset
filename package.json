@@ -1,0 +1,24 @@
+{
+  "name": "hrcloset",
+  "version": "1.0.0",
+  "description": "This app is for stocking and using supplies from the second floor electrical closet at Heritage Halls",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allenmb/hrcloset.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allenmb/hrcloset/issues"
+  },
+  "homepage": "https://github.com/allenmb/hrcloset#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20"
+  }
+}
