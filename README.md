@@ -7,7 +7,7 @@
 
 ## Using the Admin Page
 From the Admin Page you should be able to make any changes you want to the list of supplies and the buildings.
-![Admin Page](https://raw.githubusercontent.com/allenmb/hrcloset/admin.png)
+![Admin Page](/admin.png)
 ### Items that are stocked
 Use this section to change the items in a building. If you fill out the building and item fields you can remove the item from the list. When adding an item, be sure to include the number in the closet (put 0 if you don't know) and the number that the closet should have for full stock.
 ### Add/Delete a Building
