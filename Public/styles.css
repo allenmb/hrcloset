@@ -13,10 +13,32 @@ body {
     background: #f3f3f3;
 }
 
+h1 {
+    background: #002E5D;
+    /*dark blue/navy
+    /*background: #5F7C9B; medium blue*/
+    margin-top: 0em;
+    padding-top: 0.67em;
+    padding-bottom: 0.67em;
+    color: #F3F3F3;
+}
+
+h2 {
+    margin-top: 0.67em;
+}
+
 button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    margin: 0.2em;
+    /*background-color: #30557C;*/
+    /*margin: 0.2em;*/
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited {
+    background-color: #002E5D; /*30557C*/
 }
 
 .plusminus {
@@ -28,17 +50,33 @@ button {
 }
 
 footer {
+    background: #002E5D;
+    color: #F3F3F3;
     font-size: 0.6em;
     flex-shrink: 0;
     text-align: center;
 }
 
-li {
+.row {
     min-height: 30px;
     padding: 10px;
     margin: auto;
     font-size: 1em;
-    display: block;
+    /*display: block;*/
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3 {
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.col-2 {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
 
 select {
@@ -57,4 +95,9 @@ select,
 button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
+}
+
+a {
+    color: #F3F3F3;
+    text-decoration: none;
 }
